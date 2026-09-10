@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Accion</th>
+        </tr>
+    </thead>
+    
+    @for (item of items; track $index) {
+        <tr>
+            <td> {{ item.id }} </td>
+            <td> {{ item.name }} </td>
+            <td>
+                <!--<button (click)="navegar(item.id)">Ver detalle</button>-->
+                <!-- <a [routerLink]="['detalle', item.id]">Ver detalle</a> -->
+                <button [routerLink]="['detalle']" [queryParams]="{id: item.id}">Ver detalle</button>
+            </td>
+        </tr>
+    }
+</table>
+
+<router-outlet></router-outlet>

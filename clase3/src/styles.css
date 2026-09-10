@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+.hijo {
+    background-color: lightcoral;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}

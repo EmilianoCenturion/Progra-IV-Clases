@@ -1,0 +1,15 @@
+<label for="usuarios">Usuario</label>
+<br>
+<input name="usuario" type="text" [(ngModel)]="usuario"/>
+<br>
+<br>
+<label for="contraseña">Contraseña</label>
+<br>
+<input name="contraseña" type="text" [(ngModel)]="contrasena"/>
+<br>
+<br>
+<button (click)="login()">Ingresar</button>
+
+<p *ngIf="error" style="color: black; background-color: red;">
+    Usuario o Contraseña incorrectos
+</p>

@@ -1,0 +1,13 @@
+<!-- <app-mi-componente *ngIf="miBool()"></app-mi-componente> -->
+
+<!-- <ng-container *ngFor="let item of MiArray">
+    <app-mi-componente *ngIf="item == 'valor1'"></app-mi-componente> 
+</ng-container> -->
+
+@for (item of ['miArray']; track item) {
+    
+    @if (item == 'valor1') {
+        <app-mi-componente></app-mi-componente>
+    }
+    
+}

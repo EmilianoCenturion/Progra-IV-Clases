@@ -1,0 +1,7 @@
+<app-login [Loguearse]="Loguearse.bind(this)"></app-login>
+
+@if (estadoLogin() === "exito") {
+    <app-bienvenido></app-bienvenido>
+} @else if (estadoLogin() === "error") {
+    <app-error></app-error>
+}

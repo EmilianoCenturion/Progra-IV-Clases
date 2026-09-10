@@ -1,0 +1,12 @@
+<div class="padre">
+
+    <app-hijito  
+        [dataSignal]="valor" 
+        (datoDelHijoSignal)="recibirDatoSignal($event)"
+    >
+    </app-hijito>
+
+    <app-hijito2 [datoHijo2]="datoDelHijoSignal"></app-hijito2>
+
+</div>
+

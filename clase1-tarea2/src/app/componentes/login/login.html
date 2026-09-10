@@ -1,0 +1,11 @@
+<label for="usuarios">Usuario</label>
+<br>
+<input name="usuario" type="text" [(ngModel)]="nombreIngresado" />
+<br>
+<br>
+<label for="contraseña">Contraseña</label>
+<br>
+<input name="contraseña" type="text" [(ngModel)]="claveIngresada" />
+<br>
+<br>
+<button (click)="Loguearse(nombreIngresado, claveIngresada)">Ingresar</button>
